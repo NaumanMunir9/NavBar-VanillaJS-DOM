@@ -8,4 +8,56 @@
 }
 
 .navbar__header {
+  background: #0e1313;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-bottom: 0.3rem solid #d73831;
+}
+
+img {
+  width: 150px;
+}
+
+.navbar__btn {
+  align-self: center;
+  border: 5px solid #d73831;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 30px;
+  height: 5px;
+  margin: 0.5rem;
+  background: #d73831;
+  transition: all 2s ease;
+}
+
+.navbar__links {
+  list-style-type: none;
+  transition: all 2s ease;
+}
+
+.navbar__single-link {
+  display: block;
+  background: #76717a;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #d73831;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+.navbar__single-link:hover {
+  padding-left: 1.5rem;
+  background: #464447;
+}
+
+header {
+  min-height: calc(100vh - 91.8px);
+  background: #0e1313;
 }
