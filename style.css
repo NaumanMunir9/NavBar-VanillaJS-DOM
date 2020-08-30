@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
+:root {
+  --basic-red: #d73831;
+  --basic-black: #0e1313;
+  --basic-grey: #76717a;
+}
+
 * {
   font-family: "Ubuntu", sans-serif;
   margin: 0;
@@ -7,21 +13,21 @@
   box-sizing: border-box;
 }
 
-.navbar__header {
-  background: #0e1313;
+.navbar_header {
+  background: var(--basic-black);
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  border-bottom: 0.3rem solid #d73831;
+  border-bottom: 0.3rem solid var(--basic-red);
 }
 
 img {
   width: 150px;
 }
 
-.navbar__btn {
+.navbar_btn {
   align-self: center;
-  border: 5px solid #d73831;
+  border: 5px solid var(--basic-red);
   cursor: pointer;
 }
 
@@ -31,7 +37,7 @@ img {
   width: 30px;
   height: 5px;
   margin: 0.5rem;
-  background: #d73831;
+  background: var(--basic-red);
   transition: all 2s ease;
 }
 
@@ -47,32 +53,32 @@ img {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
-.navbar__links {
+.navbar_links {
   list-style-type: none;
   transition: all 2s ease;
   height: 0;
   overflow: hidden;
 }
 
-.navbar__collapse {
+.navbar_collapse {
   height: 240px;
 }
 
-.navbar__single-link {
+.navbar_single-link {
   display: block;
-  background: #76717a;
+  background: var(--basic-grey);
   padding: 1rem;
   font-size: 1.5rem;
   text-decoration: none;
   text-transform: capitalize;
-  color: #d73831;
+  color: var(--basic-red);
   transition: all 1s ease;
   cursor: pointer;
 }
 
-.navbar__single-link:hover {
+.navbar_single-link:hover {
   padding-left: 1.5rem;
-  background: #464447;
+  background: var(--basic-black);
 }
 
 header {
